@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smolly — Datenschutzrichtlinie</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #FAF5EE;
+      color: #5C4033;
+      line-height: 1.7;
+      padding: 24px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    h1 { font-size: 28px; margin-bottom: 8px; color: #D4877F; }
+    h2 { font-size: 20px; margin-top: 32px; margin-bottom: 12px; color: #7BA388; }
+    p, li { font-size: 15px; margin-bottom: 12px; }
+    ul { padding-left: 24px; }
+    .date { font-size: 13px; color: #8B7355; margin-bottom: 24px; }
+    a { color: #D4877F; }
+    .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #E5D5C5; font-size: 13px; color: #8B7355; text-align: center; }
+  </style>
+</head>
+<body>
+  <h1>🐾 Smolly Datenschutzrichtlinie</h1>
+  <p class="date">Zuletzt aktualisiert: 11. März 2026</p>
+
+  <p>Smolly („wir", „unser", „die App") ist eine Haustier-Wellness-Begleiter-App. Wir nehmen Ihren Datenschutz ernst. Diese Richtlinie erklärt, welche Daten wir erheben, wie wir sie verwenden und welche Rechte Sie haben.</p>
+
+  <h2>1. Daten, die wir erheben</h2>
+  <p>Wir erheben die folgenden Informationen, wenn Sie Smolly nutzen:</p>
+  <ul>
+    <li><strong>Kontoinformationen:</strong> E-Mail-Adresse und Anzeigename bei der Registrierung</li>
+    <li><strong>Haustierprofile:</strong> Name, Art, Rasse, Alter, Gewicht, Gesundheitszustände, Allergien und hochgeladene Fotos</li>
+    <li><strong>Ernährungsdaten:</strong> Protokollierte Mahlzeiten, Futterpräferenzen und Fütterungspläne</li>
+    <li><strong>Gesundheitsakten:</strong> Tierarztbesuche, Medikamente und Gesundheitsnotizen</li>
+    <li><strong>Aktivitäten:</strong> Bewegungs- und Aktivitätsprotokolle</li>
+    <li><strong>Kalendereinträge:</strong> Erinnerungen und geplante Termine</li>
+    <li><strong>Chat-Nachrichten:</strong> Gespräche mit dem KI-Assistenten</li>
+    <li><strong>App-Einstellungen:</strong> Spracheinstellung, Maßeinheiten, Design</li>
+  </ul>
+  <p>Wir erheben <strong>keine</strong> Standortdaten, Kontakte, Browserverlauf oder sonstige Daten, die nicht mit der Haustierpflege zusammenhängen.</p>
+
+  <h2>2. Wie wir Ihre Daten verwenden</h2>
+  <ul>
+    <li>Um personalisierte Empfehlungen zur Haustierpflege bereitzustellen</li>
+    <li>Um die Ernährung, Gesundheit und Aktivitäten Ihres Haustieres zu verfolgen</li>
+    <li>Um den KI-Assistenten mit Kontext über Ihre Haustiere zu versorgen</li>
+    <li>Um Ihre Daten geräteübergreifend zu synchronisieren</li>
+    <li>Um Fütterungserinnerungen und Benachrichtigungen zu senden (falls aktiviert)</li>
+  </ul>
+  <p>Wir verkaufen Ihre Daten <strong>nicht</strong> an Dritte. Wir verwenden Ihre Daten <strong>nicht</strong> für Werbung.</p>
+
+  <h2>3. Drittanbieter-Dienste</h2>
+  <p>Smolly nutzt die folgenden Drittanbieter-Dienste:</p>
+  <ul>
+    <li><strong>Supabase</strong> (Datenbank & Authentifizierung) — Ihre Daten werden sicher in der SOC 2 Typ II zertifizierten Infrastruktur von Supabase gespeichert.</li>
+    <li><strong>Google Gemini AI</strong> (KI-Chat-Assistent) — Wenn Sie den KI-Assistenten nutzen, werden Informationen über Ihr Haustier an die Gemini-API von Google gesendet. Google verwendet API-Daten nicht für Modelltraining.</li>
+    <li><strong>Open Pet Food Facts</strong> (Futterdatenbank) — Barcode-Abfragen nutzen diese offene Datenbank. Es werden keine persönlichen Daten gesendet.</li>
+    <li><strong>RevenueCat</strong> (Abonnements, falls zutreffend) — Verwaltet In-App-Käufe.</li>
+  </ul>
+
+  <h2>4. Datenspeicherung & Sicherheit</h2>
+  <ul>
+    <li>Daten werden in Supabase (PostgreSQL-Datenbank) mit Verschlüsselung im Ruhezustand und bei der Übertragung gespeichert</li>
+    <li>Row Level Security (RLS) stellt sicher, dass Benutzer nur auf ihre eigenen Daten zugreifen können</li>
+    <li>Passwörter werden mit bcrypt gehasht — wir speichern niemals Klartext-Passwörter</li>
+    <li>Authentifizierung erfolgt über branchenübliche JWT-Token</li>
+    <li>Der Gast-/Offline-Modus speichert Daten nur lokal auf Ihrem Gerät</li>
+  </ul>
+
+  <h2>5. Ihre Rechte (DSGVO)</h2>
+  <p>Sie haben das Recht auf:</p>
+  <ul>
+    <li><strong>Auskunft:</strong> Alle über Sie gespeicherten Daten einsehen (in der App sichtbar)</li>
+    <li><strong>Löschung:</strong> Ihr Konto und alle zugehörigen Daten dauerhaft über die Schaltfläche „Konto löschen" in den Profileinstellungen löschen. Diese Aktion ist sofort und unwiderruflich.</li>
+    <li><strong>Datenübertragbarkeit:</strong> Fordern Sie einen Export Ihrer Daten an, indem Sie uns kontaktieren</li>
+    <li><strong>Berichtigung:</strong> Bearbeiten oder korrigieren Sie Ihre Daten jederzeit in der App</li>
+    <li><strong>Widerruf der Einwilligung:</strong> Melden Sie sich ab oder löschen Sie Ihr Konto jederzeit</li>
+  </ul>
+  <p>Wenn Sie Ihr Konto löschen, werden alle Daten (Haustiere, Mahlzeiten, Gesundheitsakten, Chat-Nachrichten, Aktivitäten, Kalendereinträge und Einstellungen) dauerhaft von unseren Servern entfernt.</p>
+
+  <h2>6. Datenschutz für Kinder</h2>
+  <p>Smolly richtet sich nicht an Kinder unter 13 Jahren. Wir erheben wissentlich keine Daten von Kindern unter 13 Jahren. Wenn Sie glauben, dass ein Kind uns personenbezogene Daten übermittelt hat, kontaktieren Sie uns bitte.</p>
+
+  <h2>7. Datenaufbewahrung</h2>
+  <p>Wir bewahren Ihre Daten auf, solange Ihr Konto aktiv ist. Wenn Sie Ihr Konto löschen, werden alle Daten sofort dauerhaft gelöscht. Wir erstellen keine Sicherungskopien gelöschter Benutzerdaten.</p>
+
+  <h2>8. Änderungen dieser Richtlinie</h2>
+  <p>Wir können diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Wir werden Benutzer über wesentliche Änderungen über die App informieren.</p>
+
+  <h2>9. Kontakt</h2>
+  <p>Wenn Sie Fragen zu dieser Datenschutzrichtlinie oder Ihren Daten haben, kontaktieren Sie uns unter:</p>
+  <p>📧 <a href="mailto:privacy@smolly.app">privacy@smolly.app</a></p>
+
+  <div class="footer">
+    <p>🐾 Smolly — Dein Haustier-Wellness-Begleiter</p>
+    <p>© 2026 Smolly. Alle Rechte vorbehalten.</p>
+  </div>
+</body>
+</html>
