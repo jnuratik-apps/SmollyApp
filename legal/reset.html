@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smolly – Reset Password</title>
+  <style>
+    body { font-family: -apple-system, sans-serif; text-align: center; padding: 60px 20px; background: #F5F0EB; color: #333; }
+    .icon { font-size: 48px; margin-bottom: 16px; }
+    h1 { font-size: 20px; margin-bottom: 8px; }
+    p { color: #888; font-size: 14px; }
+    a { color: #9B7FD4; text-decoration: none; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="icon">🔐</div>
+  <h1>Redirecting to Smolly...</h1>
+  <p id="status">Opening the app to reset your password.</p>
+  <p style="margin-top: 24px;"><a id="manual-link" href="#">Tap here if the app doesn't open</a></p>
+  <script>
+    // Supabase redirects here with tokens in the hash fragment:
+    // reset.html#access_token=xxx&refresh_token=yyy&type=recovery
+    // We convert them to query params and redirect to the app's deep link
+    var hash = window.location.hash.substring(1);
+    if (hash) {
+      var appUrl = 'smolly://reset-password?' + hash;
+      document.getElementById('manual-link').href = appUrl;
+      window.location.href = appUrl;
+    } else {
+      document.getElementById('status').textContent = 'No reset token found. Please request a new password reset from the app.';
+    }
+  </script>
+</body>
+</html>
